@@ -128,7 +128,7 @@
 		<form method="POST" action="evaluate.do" id="myForm">
 		<p align="center"> 
 		<a  style="color: blue; text-decoration: underline; cursor:pointer;" onclick="document.getElementById('myForm').submit()">Check accuracy for the existing dataset.</a> <br>
-		copyright © Aye Thant May UIT 2018</p>
+		copyright © Aditya Verma 2025</p>
 		</form>
 		
 		<br>

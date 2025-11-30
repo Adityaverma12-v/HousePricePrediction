@@ -16,7 +16,21 @@ public class RegressionAnalysis {
 
 	public Double RA() throws Exception {
 		ArffLoader loader = new ArffLoader();
-		loader.setSource(new File("/Users/ayethantmay/Desktop/housing.arff"));
+		// Load ARFF file from classpath
+		InputStream is = getClass().getResourceAsStream("/housing.arff");
+		if (is == null) {
+			throw new FileNotFoundException("housing.arff not found in classpath");
+		}
+		File tempFile = File.createTempFile("housing", ".arff");
+		tempFile.deleteOnExit();
+		try (FileOutputStream fos = new FileOutputStream(tempFile)) {
+			byte[] buffer = new byte[1024];
+			int len;
+			while ((len = is.read(buffer)) != -1) {
+				fos.write(buffer, 0, len);
+			}
+		}
+		loader.setSource(tempFile);
 		Instances dataset = loader.getDataSet();
 		Attribute[] attr = new Attribute[10];
 		

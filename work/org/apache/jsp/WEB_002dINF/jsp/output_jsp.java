@@ -236,7 +236,7 @@ public final class output_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t<form method=\"POST\" action=\"evaluate.do\" id=\"myForm\">\r\n");
       out.write("\t\t<p align=\"center\"> \r\n");
       out.write("\t\t<a  style=\"color: blue; text-decoration: underline; cursor:pointer;\" onclick=\"document.getElementById('myForm').submit()\">Check accuracy for the existing dataset.</a> <br>\r\n");
-      out.write("\t\tcopyright © Aye Thant May UIT 2018</p>\r\n");
+      out.write("\t\tcopyright © Aditya Verma 2025</p>\r\n");
       out.write("\t\t</form>\r\n");
       out.write("\t\t\r\n");
       out.write("\t\t<br>\r\n");

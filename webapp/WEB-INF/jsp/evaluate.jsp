@@ -59,7 +59,7 @@ text-align: center;
 	<br>
 	<br>
 	<br>
-	<p align="center">copyright © Aye Thant May UIT 2018</p>
+	<p align="center">copyright © Aditya Verma 2025</p>
 
 </footer>
 

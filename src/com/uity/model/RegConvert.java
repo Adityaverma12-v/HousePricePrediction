@@ -26,7 +26,7 @@ public class RegConvert {
     
     public static void main(String args[]) throws Exception
     {
-    	Convert("/Users/ayethantmay/Desktop/housing.csv","/Users/ayethantmay/Desktop/housing.arff");
+    	Convert("kc_house_data.csv","webapp/WEB-INF/classes/housing.arff");
     }
     
 }

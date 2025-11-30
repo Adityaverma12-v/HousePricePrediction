@@ -177,7 +177,7 @@ public final class input_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("<footer>\r\n");
       out.write("\t<br>\r\n");
-      out.write("\t<p align=\"center\">copyright © Aye Thant May UIT 2018</p>\r\n");
+      out.write("\t<p align=\"center\">copyright © Aditya Verma 2025</p>\r\n");
       out.write("\r\n");
       out.write("</footer>\r\n");
       out.write("\r\n");
