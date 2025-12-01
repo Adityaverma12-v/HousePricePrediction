@@ -1,20 +1,30 @@
 @echo off
-REM Run the House Price Prediction Application
+REM Run the House Price Prediction Web Server
 
 echo ======================================
-echo Running House Price Prediction System
+echo House Price Prediction - Web Server
 echo ======================================
 echo.
 
-if not exist bin\output\HousePricePrediction.jar (
-    echo ERROR: JAR file not found!
+if not exist bin\classes\com\houseprice\SimpleHttpServer.class (
+    echo ERROR: SimpleHttpServer not compiled!
     echo Please run build.bat first
     exit /b 1
 )
 
-echo Starting application...
+echo Starting web server...
+echo.
+echo Access the application at: http://localhost:9000
+echo.
+echo Features:
+echo   - Home:      http://localhost:9000
+echo   - Predict:   http://localhost:9000/predict
+echo   - API:       http://localhost:9000/api/properties
+echo.
+echo Press Ctrl+C to stop the server
 echo.
 
-java -jar bin\output\HousePricePrediction.jar
+cd /d "%~dp0"
+java -cp bin\classes com.houseprice.SimpleHttpServer
 
 pause

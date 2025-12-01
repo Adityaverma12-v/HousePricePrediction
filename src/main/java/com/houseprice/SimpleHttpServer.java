@@ -174,35 +174,13 @@ public class SimpleHttpServer {
             "        </div>\n" +
             "        \n" +
             "        <div class=\"section\">\n" +
-            "            <h2>API Endpoints</h2>\n" +
-            "            <p><code>GET /api/properties</code> - Get sample properties</p>\n" +
-            "            <button class=\"button\" onclick=\"fetchProperties()\">Fetch Properties</button>\n" +
-            "        </div>\n" +
-            "        \n" +
-            "        <div class=\"section\">\n" +
-            "            <h2>Requirements Met</h2>\n" +
-            "            <ul>\n" +
-            "                <li>✅ OOP: Inheritance, Polymorphism, Interfaces (40 marks)</li>\n" +
-            "                <li>✅ Collections & Generics (6 marks)</li>\n" +
-            "                <li>✅ Multithreading & Synchronization (4 marks)</li>\n" +
-            "                <li>✅ Database Classes & JDBC (13 marks)</li>\n" +
-            "                <li>✅ Problem Understanding & Design (8 marks)</li>\n" +
-            "                <li>✅ Core Java Concepts (10 marks)</li>\n" +
-            "                <li>✅ Servlets & Web Integration (7 marks)</li>\n" +
-            "            </ul>\n" +
-            "            <p><strong>Total: 66/66 marks ✅</strong></p>\n" +
+            "            <h2>Get Started</h2>\n" +
+            "            <p>Ready to predict house prices? Click the button below to start!</p>\n" +
+            "            <a href=\"/predict\" class=\"button\">Go to Predictions</a>\n" +
             "        </div>\n" +
             "    </div>\n" +
             "    \n" +
             "    <script>\n" +
-            "        function fetchProperties() {\n" +
-            "            fetch('/api/properties')\n" +
-            "                .then(response => response.json())\n" +
-            "                .then(data => {\n" +
-            "                    alert('Properties loaded:\\n' + JSON.stringify(data, null, 2));\n" +
-            "                })\n" +
-            "                .catch(error => alert('Error: ' + error));\n" +
-            "        }\n" +
             "    </script>\n" +
             "</body>\n" +
             "</html>";
